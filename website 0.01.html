@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fusion Power</title>
+  <style>
+    :root {
+      --color-primary: #00f2fe;
+      --color-secondary: #4facfe;
+      --color-dark: #111;
+      --color-light: #f5f7fa;
+      --color-white: #fff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--color-light);
+      color: #333;
+      line-height: 1.6;
+    }
+    /* ===== NAVBAR ===== */
+    nav {
+      background: rgba(0,0,0,0.8);
+      color: var(--color-white);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--color-white);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: var(--color-primary);
+    }
+    /* ===== HERO ===== */
+    header {
+      background: url('https://images.unsplash.com/photo-1581092919535-7146f16b2ad6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80')
+        no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: var(--color-white);
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+    /* ===== SECTION ===== */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      color: var(--color-secondary);
+    }
+    .tech-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .tech-card {
+      background: var(--color-white);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .tech-card h3 {
+      margin-bottom: 10px;
+      color: var(--color-primary);
+    }
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--color-dark);
+      color: var(--color-white);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#technology">Technology</a>
+    <a href="#team">Team</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>We’re Building the World’s First Fusion Power Plant</h1>
+    <p>Enabling a future with unlimited clean electricity</p>
+  </header>
+
+  <section id="technology">
+    <h2>Technology</h2>
+    <div class="tech-cards">
+      <div class="tech-card">
+        <h3>How it Works</h3>
+        <p>Learn how fusion creates clean and powerful energy for the future.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Trenta</h3>
+        <p>Our prototype that demonstrates early steps toward fusion energy.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Polaris</h3>
+        <p>The next generation reactor that takes us closer to commercialization.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Team</h2>
+    <p>Our diverse team of engineers, scientists, and visionaries is working to bring fusion power to the world.</p>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <p><strong>What is fusion?</strong> Fusion is the process that powers the sun. We aim to replicate it here on Earth.</p>
+    <p><strong>Is it safe?</strong> Fusion does not produce long-lived radioactive waste and is inherently safe.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: info@example.com</p>
+    <p>Phone: +66-1234-5678</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Fusion Energy Project | Built with GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
